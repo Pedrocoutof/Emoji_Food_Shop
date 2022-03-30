@@ -72,9 +72,11 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           searchWidget(_searchController.text.toString()),
-          FavoriteFoodsWidget(),
-          RecommendedFoodsWidget(),
-          AllFoodsWidget(),
+          _searchController.text.isEmpty ? FavoriteFoodsWidget() : Column(),
+          _searchController.text.isEmpty ? RecommendedFoodsWidget() : Column(),
+          _searchController.text.isEmpty ? AllFoodsWidget() : Column(),
+          
+         
         ],
       ),
     );
@@ -230,7 +232,7 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: const EdgeInsets.only(left: 15.0),
                 child: Text(
-                  'Found foods',
+                  SearchFoodInList(_search).isNotEmpty ? 'Found foods' : 'no food found :(',
                   style: GoogleFonts.notoSans(
                       fontWeight: FontWeight.w800, fontSize: 27.0),
                 ),
