@@ -13,6 +13,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  initState(){
+    super.initState();
+    setState(() {
+      initLists();
+    });
+  }
   TextEditingController _searchController = TextEditingController();
   @override
   Widget build(BuildContext context) {
@@ -232,7 +238,7 @@ class _HomePageState extends State<HomePage> {
               Padding(
                 padding: const EdgeInsets.only(left: 15.0),
                 child: Text(
-                  SearchFoodInList(_search).isNotEmpty ? 'Found foods' : 'no food found :(',
+                  SearchFoodInList(_search).isNotEmpty ? 'Found foods' : 'No food found :(',
                   style: GoogleFonts.notoSans(
                       fontWeight: FontWeight.w800, fontSize: 27.0),
                 ),
