@@ -9,10 +9,10 @@ class Food{
   late bool favorite;
   List<Ingredient> ingredents = [];
 
-  Food({required String nameDisplay, required String asset_img, required bool favorite, String? description, Ingredient? ingredient}){
+  Food({required String nameDisplay, required String assetImg, required bool favorite, String? description, Ingredient? ingredient}){
 
     this.nameDisplay = nameDisplay;
-    this.asset_img = asset_img;
+    this.asset_img = assetImg;
     this.favorite = favorite;
     nameSearch = nameDisplay.toUpperCase();
 
@@ -27,5 +27,10 @@ class Food{
   addIngredient(int count, String ingredient){
     Ingredient newIgredient = Ingredient(ingredient: ingredient, count: count);
     this.ingredents.add(newIgredient);
+  }
+
+  setListIngredient(List<Ingredient> listIngredient){
+
+    this.ingredents.addAll(listIngredient);
   }
 }
