@@ -1,16 +1,5 @@
-# shop_emoji_ui
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h1> EmojiFoodShop </h1>
+  <p>Este projeto foi feito com intuito de treinar o [Framework Flutter](https://flutter.dev/?gclid=CjwKCAjwo8-SBhAlEiwAopc9Wy3L1u16Q-      q1x71LZMAYkjCwy8VUjx9xf6d5o6ob6Ia1wXZSWxCWhRoCmSYQAvD_BwE&gclsrc=aw.ds)<\p>
+  <p>Sinto que ainda tenho muito o que melhorar e pretendo continuar atualizando este respositório.<\p>
+    
+    
